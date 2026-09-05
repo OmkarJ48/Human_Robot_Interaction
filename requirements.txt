@@ -1,0 +1,16 @@
+# Python tooling for the CoppeliaSim Human-Robot Interaction assignment.
+# The simulation itself runs Lua inside CoppeliaSim; these packages are only
+# needed for tools/run_simulation.py (driving the scene and logging results).
+#
+#   pip install -r requirements.txt
+
+# ZeroMQ Remote API client -- controls CoppeliaSim 4.6+ from Python.
+coppeliasim-zmqremoteapi-client>=2.0.3
+
+# Message transport used by the remote API client.
+pyzmq>=25.1.0
+cbor2>=5.6.0
+
+# Trajectory analysis and plotting.
+numpy>=1.26.0
+matplotlib>=3.8.0
